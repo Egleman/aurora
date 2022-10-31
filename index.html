@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+<body>
+
+    <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="/" class="header__logo">
+                <picture>
+                    <source media="(max-width: 1022px)" srcset="img/2.svg">
+                    <img src="img/1.svg" alt="logo">
+                </picture>
+            </a>
+            <div class="header__right">
+                <ul class="header__list">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Объекты</a></li>
+                    <li><a href="#">Ипотека</a></li>
+                    <li><a href="#">Специалисты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+                <div class="header__top">
+                    <a href="tel:74732955033" class="header__number">+7 (473) 2-955-033</a>
+                    <div class="header__social">
+                        <a href="#">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.80932 13.8135L9.39578 19.6302C9.98744 19.6302 10.2437 19.376 10.551 19.0708L13.3249 16.4198L19.0729 20.6291C20.127 21.2166 20.8697 20.9073 21.1541 19.6594L24.927 1.98018L24.9281 1.97914C25.2624 0.420808 24.3645 -0.188567 23.3374 0.193725L1.16036 8.68435C-0.353184 9.27185 -0.330267 10.1156 0.903066 10.4979L6.57286 12.2614L19.7426 4.02081C20.3624 3.61039 20.926 3.83748 20.4624 4.24789L9.80932 13.8135Z" fill="#BCBCBC"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.27534 17.6093C4.33726 17.4072 2.58979 16.9298 1.09368 15.7597C0.908043 15.6141 0.716382 15.4738 0.546976 15.3112C-0.107866 14.6823 -0.173848 13.962 0.344318 13.2197C0.7876 12.5845 1.53173 12.4145 2.30518 12.7793C2.45495 12.85 2.59765 12.9382 2.73432 13.033C5.52258 14.9488 9.35292 15.0017 12.1516 13.1191C12.4289 12.9065 12.7253 12.7332 13.0688 12.6447C13.7368 12.4732 14.3597 12.7185 14.7181 13.3029C15.1276 13.9703 15.1224 14.6218 14.6178 15.14C13.8439 15.9343 12.9131 16.5091 11.8788 16.9102C10.9009 17.2893 9.82972 17.4802 8.76956 17.6069C8.92954 17.7811 9.00495 17.8667 9.10497 17.9672C10.5445 19.4136 11.9904 20.8539 13.4252 22.3047C13.914 22.7991 14.0162 23.412 13.747 23.987C13.4527 24.6154 12.7939 25.0288 12.148 24.9846C11.7387 24.9563 11.4196 24.7526 11.136 24.4669C10.0497 23.3738 8.94289 22.3008 7.87854 21.187C7.5688 20.8631 7.41981 20.9243 7.14646 21.2056C6.05357 22.3306 4.94288 23.4385 3.82564 24.54C3.32397 25.0346 2.72699 25.1236 2.1452 24.8411C1.52675 24.5413 1.13322 23.91 1.16359 23.2756C1.18454 22.8465 1.39557 22.5186 1.69014 22.2246C3.11477 20.8021 4.53547 19.3759 5.95669 17.951C6.05069 17.8562 6.13841 17.7557 6.27534 17.6093Z" fill="#BCBCBC"/>
+                                <path d="M7.45591 12.6541C3.99841 12.6423 1.1633 9.77605 1.18346 6.31306C1.20336 2.81184 4.04031 -0.00966292 7.53184 2.48731e-05C11.0304 0.00945083 13.8386 2.87154 13.821 6.40915C13.8032 9.86508 10.9485 12.6662 7.45591 12.6541ZM10.5982 6.32144C10.5921 4.60199 9.22275 3.23313 7.5067 3.23156C5.77625 3.22972 4.39457 4.62346 4.40792 6.35862C4.42075 8.07153 5.80191 9.4307 7.52267 9.42441C9.2382 9.41839 10.6039 8.04063 10.5982 6.32144Z" fill="#BCBCBC"/>
+                            </svg>                                
+                        </a>
+                        <a href="#">
+                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2315 14.2024H13.7259C13.7259 14.2024 14.1773 14.1528 14.4077 13.9044C14.6198 13.6763 14.613 13.248 14.613 13.248C14.613 13.248 14.5838 11.2429 15.5145 10.9476C16.4318 10.6568 17.6099 12.8856 18.8585 13.7425C19.8027 14.3911 20.5202 14.2489 20.5202 14.2489L23.8588 14.2024C23.8588 14.2024 25.6053 14.0948 24.7772 12.7216C24.7093 12.6093 24.2949 11.7058 22.2948 9.84935C20.2015 7.90633 20.4818 8.22061 23.0035 4.85961C24.5392 2.81273 25.1532 1.56309 24.9614 1.02787C24.7785 0.518099 23.649 0.652838 23.649 0.652838L19.8899 0.676256C19.8899 0.676256 19.6113 0.638244 19.4046 0.761782C19.2026 0.882945 19.0726 1.16532 19.0726 1.16532C19.0726 1.16532 18.4777 2.74926 17.6842 4.09631C16.0103 6.93872 15.341 7.08874 15.0675 6.91225C14.4311 6.50091 14.59 5.25975 14.59 4.37801C14.59 1.6235 15.0077 0.474997 13.7764 0.177689C13.3678 0.0789261 13.0671 0.0137628 12.0221 0.00324163C10.6808 -0.0106735 9.54557 0.00731388 8.90276 0.32227C8.47512 0.531675 8.14523 0.998339 8.34615 1.02515C8.59459 1.05841 9.1573 1.17686 9.45563 1.58311C9.84084 2.10713 9.82726 3.28415 9.82726 3.28415C9.82726 3.28415 10.0485 6.5267 9.31037 6.92956C8.80366 7.20582 8.10858 6.64176 6.61627 4.06305C5.85162 2.74214 5.27431 1.28207 5.27431 1.28207C5.27431 1.28207 5.16299 1.0092 4.96445 0.863261C4.72348 0.686437 4.3868 0.630099 4.3868 0.630099L0.8147 0.653516C0.8147 0.653516 0.278461 0.66845 0.081613 0.901613C-0.0935135 1.10898 0.0676978 1.53797 0.0676978 1.53797C0.0676978 1.53797 2.86429 8.08078 6.03082 11.378C8.93432 14.4009 12.2315 14.2024 12.2315 14.2024Z" fill="#DC4F00"/>
+                            </svg>                                
+                        </a>                                              
+                    </div>
+                    <button class="header__button">Заказать звонок</button>
+                </div>
+            </div>
+            <button class="header__burger">
+                <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 19.1666H30V17.5H0V19.1666ZM0 10.8333H30V9.16665H0V10.8333ZM0 0.833313L-4.8615e-06 2.49998H30V0.833313H0Z" fill="black"/>
+                </svg>                    
+            </button>
+        </div>
+    </div>
+</header>
+    <main>
+        <section class="banner">
+            <div class="banner__filter">
+                <div class="banner__filter-title">Выберите нужные параметры</div>
+                <form action="#" class="banner__form">
+                    <div class="banner__type">
+                        <p class="banner__label">Тип</p>
+                        <div class="banner__accordion">
+                            <a href="#" class="banner__accordion-link">
+                                <p>Коммерческая недвижимость</p>
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.6183 0.618269C13.1317 0.131678 12.3429 0.131248 11.8558 0.617308L7 5.4625L2.14423 0.617309C1.65711 0.131248 0.868321 0.131678 0.38173 0.618269C-0.105236 1.10524 -0.105236 1.89476 0.38173 2.38173L5.58579 7.58579C6.36683 8.36683 7.63317 8.36683 8.41421 7.58579L13.6183 2.38173C14.1052 1.89476 14.1052 1.10524 13.6183 0.618269Z" fill="#DC4F00"/>
+                                </svg>                                    
+                            </a>
+                            <div class="banner__accordion-content">
+                                <a href="#" class="banner__accordion-option">Коммерческая недвижимость</a>
+                                <a href="#" class="banner__accordion-option">Частная недвижимость</a>
+                                <a href="#" class="banner__accordion-option">Аренда</a>
+                                <a href="#" class="banner__accordion-option">Продажа</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__purpose">
+                        <p class="banner__label">Назначение</p>
+                        <div class="banner__purpose-inputs">
+                            <input type="radio" name="rent" id="rent" checked value="Аренда">
+                            <label for="rent">
+                                Аренда
+                            </label>
+                            <input type="radio" name="rent" id="purchase" value="Покупка">
+                            <label for="purchase">
+                                Покупка
+                            </label>
+                        </div>
+                    </div>
+                    <div class="banner__location">
+                        <p class="banner__label">Район</p>
+                        <div class="banner__accordion">
+                            <a href="#" class="banner__accordion-link banner__accordion-link_bottom">
+                                <p>Центральный р-н</p>
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.6183 0.618269C13.1317 0.131678 12.3429 0.131248 11.8558 0.617308L7 5.4625L2.14423 0.617309C1.65711 0.131248 0.868321 0.131678 0.38173 0.618269C-0.105236 1.10524 -0.105236 1.89476 0.38173 2.38173L5.58579 7.58579C6.36683 8.36683 7.63317 8.36683 8.41421 7.58579L13.6183 2.38173C14.1052 1.89476 14.1052 1.10524 13.6183 0.618269Z" fill="#DC4F00"/>
+                                </svg>                                    
+                            </a>
+                            <div class="banner__accordion-content banner__accordion-content_bottom">
+                                <a href="#" class="banner__accordion-option">Центральный р-н</a>
+                                <a href="#" class="banner__accordion-option">Окраина</a>
+                                <a href="#" class="banner__accordion-option">Сев-Западный р-н</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__rooms">
+                        <p class="banner__label">Комнаты</p>
+                        <div class="banner__rooms-inputs">
+                            <input type="radio" name="rooms" id="room-1" checked value="1">
+                            <label for="room-1">
+                                1
+                            </label>
+                            <input type="radio" name="rooms" id="room-2" value="2">
+                            <label for="room-2">
+                                2
+                            </label>
+                            <input type="radio" name="rooms" id="room-3" value="3">
+                            <label for="room-3">
+                                3
+                            </label>
+                            <input type="radio" name="rooms" id="room-4" value="4">
+                            <label for="room-4">
+                                4
+                            </label>
+                            <input type="radio" name="rooms" id="room-5" value="5">
+                            <label for="room-5">
+                                5+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="banner__price">
+                        <p class="banner__label">Цена</p>
+                        <div class="banner__price-inputs">
+                            <div>
+                                <p>От</p>
+                                <input type="number" placeholder="15 000">
+                            </div>
+                            <div>
+                                <p>До</p>
+                                <input type="number" placeholder="300 000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__number">
+                        <p class="banner__label">Номер объекта</p>
+                        <input type="number" placeholder="205489874" name="number-object">
+                    </div>
+                    <button type="submit" class="banner__button">Найти</button>
+                </form>
+            </div>
+            <div class="banner__bg">
+                <p class="banner__title">Лучшие<br> предложения по<br> аренде в Воронеже</p>
+            </div>
+            <div class="banner__maps">
+                <button class="banner__maps-button">
+                    <p>Карта объектов</p>
+                    <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="banner__maps-button-arrow">
+                        <path d="M5.54668 37.5848C2.48333 34.4009 2.53266 29.2872 5.65685 26.163L31.8198 1.96099e-05L63.0199 32.4277L31.2001 64.2475L5.54668 37.5848Z" fill="#FFEAA6"/>
+                        <g clip-path="url(#clip0_875_32)">
+                        <path d="M28.6818 39.4698L21.0485 31.8198L28.6818 24.1698L26.3318 21.8198L16.3318 31.8198L26.3318 41.8198L28.6818 39.4698Z" fill="#333333"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_875_32">
+                        <rect width="40" height="40" fill="white" transform="translate(2.99854 11.8198)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                        
+                </button>
+                <div class="banner__maps-map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac8dc2c92f1dba99734b1f80973d73f886811c65c8958cc2fd1f0527dca138a16&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__wrapper">
+                    <div class="news__img">
+                        <div class="news__img-left">
+                            <p>Скидки<br>до конца апреля</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="news__img-right">
+                            <picture><source srcset="img/2.webp" type="image/webp"><img src="img/2.png" alt="city"></picture>
+                        </div>
+                    </div>
+                    <div class="news__card">
+                        <p>Новые предложения от Воронежстрой</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="desc">
+            <div class="desc__market">
+                <div class="desc__market-svg">
+                    <img src="img/4.svg" alt="market">
+                </div>
+                <div class="desc__market-left">
+                    <div>
+                        <p>16</p>
+                        <p>лет</p>
+                    </div>
+                    <p>на рынке</p>
+                </div>
+                <div class="desc__market-right">
+                    <p>Агентство Аврора оказывает полный спектр профессиональных услуг на рынке недвижимости города Воронежа и области.</p>
+                    <p>За всё время своей работы хорошо зарекомендовала  себя на рынке недвижимости и добилась больших результатов, успешно сочетая отлаженные риэлторские технологии с индивидуальным подходом к каждому клиенту.</p>
+                </div>
+            </div>
+            <div class="desc__important">
+                <div class="desc__important-left">
+                    <div class="desc__important-left-text">
+                        <p>Важным достижением компании «Аврора» являются люди, из которых состоит сплоченный,  дружный коллектив, ориентированный на совместное решение поставленных нашими заказчиками задач.</p>
+                        <p>Это сильные, целеустремленные и ответственные личности, которым не чуждо чувство сострадания и участия. Их ответственность выражается и в стремлении повышать свой профессионализм.Благодаря команде, имя компании узнаваемо сегодня</p>
+                    </div>
+                    <div class="desc__important-right desc__important-right_mobile">
+                        <picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.jpg" alt="img"></picture>
+                    </div>
+                </div>
+                <div class="desc__important-right">
+                    <picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.jpg" alt="img"></picture>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <ul class="footer__top">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Объекты</a></li>
+            <li><a href="#">Ипотека</a></li>
+            <li><a href="#">Специалисты</a></li>
+            <li><a href="#">Отзывы</a></li>
+        </ul>
+        <div class="footer__wrapper">
+            <div class="footer__card">
+                <p>Контакты</p>
+                <a href="tel:74732955033">+7 (473) 2-955-033</a>
+                <a href="mailto:info@avroravrn.ru">info@avroravrn.ru</a>
+            </div>
+            <div class="footer__card">
+                <p>Адрес</p>
+                <span>г. Воронеж,
+                    Московский проспект, дом 53, офис 805
+                    ост. Памятник Славы</span>
+            </div>
+            <div class="footer__card">
+                <p>Другое</p>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Лицензионное соглашение</a>
+            </div>
+            <div class="footer__social">
+                <a href="#">
+                    <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.80932 13.8136L9.39578 19.6303C9.98744 19.6303 10.2437 19.3761 10.551 19.0709L13.3249 16.4199L19.0729 20.6293C20.127 21.2168 20.8697 20.9074 21.1541 19.6595L24.927 1.98031L24.9281 1.97926C25.2624 0.42093 24.3645 -0.188445 23.3374 0.193847L1.16036 8.68447C-0.353184 9.27197 -0.330267 10.1157 0.903066 10.498L6.57286 12.2616L19.7426 4.02093C20.3624 3.61051 20.926 3.8376 20.4624 4.24801L9.80932 13.8136Z" fill="#F99055"/>
+                    </svg>                        
+                </a>
+                <a href="#">
+                    <svg width="17" height="25" viewBox="0 0 17 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.26948 17.6093C5.3314 17.4072 3.58393 16.9299 2.08782 15.7597C1.90218 15.6142 1.71052 15.4738 1.54112 15.3112C0.886274 14.6823 0.820292 13.962 1.33846 13.2197C1.78174 12.5845 2.52587 12.4146 3.29932 12.7793C3.44909 12.85 3.59179 12.9382 3.72846 13.033C6.51672 14.9488 10.3471 15.0017 13.1458 13.1192C13.4231 12.9066 13.7195 12.7332 14.063 12.6447C14.7309 12.4732 15.3538 12.7186 15.7123 13.303C16.1218 13.9704 16.1165 14.6218 15.612 15.14C14.838 15.9344 13.9072 16.5091 12.873 16.9102C11.895 17.2894 10.8239 17.4802 9.7637 17.607C9.92368 17.7811 9.99909 17.8667 10.0991 17.9672C11.5387 19.4136 12.9845 20.8539 14.4193 22.3048C14.9082 22.7991 15.0103 23.412 14.7411 23.987C14.4468 24.6154 13.7881 25.0289 13.1421 24.9846C12.7329 24.9563 12.4137 24.7526 12.1301 24.467C11.0438 23.3738 9.93703 22.3008 8.87268 21.187C8.56294 20.8631 8.41395 20.9244 8.1406 21.2056C7.04771 22.3307 5.93702 23.4385 4.81978 24.54C4.31811 25.0346 3.72113 25.1236 3.13934 24.8411C2.52089 24.5413 2.12736 23.91 2.15773 23.2756C2.17868 22.8465 2.38972 22.5187 2.68428 22.2246C4.10891 20.8021 5.52961 19.3759 6.95083 17.951C7.04483 17.8562 7.13255 17.7557 7.26948 17.6093Z" fill="#F99055"/>
+                        <path d="M8.45005 12.6541C4.99255 12.6423 2.15744 9.77605 2.1776 6.31306C2.1975 2.81184 5.03445 -0.00966292 8.52598 2.48731e-05C12.0246 0.00945083 14.8327 2.87154 14.8152 6.40915C14.7974 9.86508 11.9426 12.6662 8.45005 12.6541ZM11.5923 6.32144C11.5863 4.60199 10.2169 3.23313 8.50084 3.23156C6.77039 3.22972 5.38871 4.62346 5.40206 6.35862C5.41489 8.07153 6.79605 9.4307 8.51681 9.42441C10.2323 9.41839 11.5981 8.04063 11.5923 6.32144Z" fill="#F99055"/>
+                    </svg>                        
+                </a>
+                <a href="#">
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2315 14.2024H13.7259C13.7259 14.2024 14.1773 14.1528 14.4077 13.9044C14.6198 13.6763 14.613 13.248 14.613 13.248C14.613 13.248 14.5838 11.2429 15.5145 10.9476C16.4318 10.6568 17.6099 12.8856 18.8585 13.7425C19.8027 14.3911 20.5202 14.2489 20.5202 14.2489L23.8588 14.2024C23.8588 14.2024 25.6053 14.0948 24.7772 12.7216C24.7093 12.6093 24.2949 11.7058 22.2948 9.84935C20.2015 7.90633 20.4818 8.22061 23.0035 4.85961C24.5392 2.81273 25.1532 1.56309 24.9614 1.02787C24.7785 0.518099 23.649 0.652838 23.649 0.652838L19.8899 0.676256C19.8899 0.676256 19.6113 0.638244 19.4046 0.761782C19.2026 0.882945 19.0726 1.16532 19.0726 1.16532C19.0726 1.16532 18.4777 2.74926 17.6842 4.09631C16.0103 6.93872 15.341 7.08874 15.0675 6.91225C14.4311 6.50091 14.59 5.25975 14.59 4.37801C14.59 1.6235 15.0077 0.474997 13.7764 0.177689C13.3678 0.0789261 13.0671 0.0137628 12.0221 0.00324163C10.6808 -0.0106735 9.54557 0.00731388 8.90276 0.32227C8.47512 0.531675 8.14523 0.998339 8.34615 1.02515C8.59459 1.05841 9.1573 1.17686 9.45563 1.58311C9.84084 2.10713 9.82726 3.28415 9.82726 3.28415C9.82726 3.28415 10.0485 6.5267 9.31037 6.92956C8.80366 7.20582 8.10858 6.64176 6.61627 4.06305C5.85162 2.74214 5.27431 1.28207 5.27431 1.28207C5.27431 1.28207 5.16299 1.0092 4.96445 0.863261C4.72348 0.686437 4.3868 0.630099 4.3868 0.630099L0.8147 0.653516C0.8147 0.653516 0.278461 0.66845 0.081613 0.901613C-0.0935135 1.10898 0.0676978 1.53797 0.0676978 1.53797C0.0676978 1.53797 2.86429 8.08078 6.03082 11.378C8.93432 14.4009 12.2315 14.2024 12.2315 14.2024Z" fill="#FFD238"/>
+                    </svg>                        
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="header__menu">
+    <div class="container">
+        <div class="header__menu-top">
+            <a href="#" class="header__menu-logo">
+                <img src="img/3.svg" alt="logo">
+            </a>
+            <button class="header__menu-close">
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.4696 22.5048L0.212689 43.7617C-0.0705909 44.0451 -0.0705909 44.5044 0.212688 44.7878C0.496063 45.0711 0.95541 45.0711 1.23878 44.7878L22.4957 23.5309L43.7526 44.7878C44.0409 45.0662 44.5002 45.0582 44.7787 44.7699C45.0503 44.4887 45.0503 44.0429 44.7787 43.7617L23.5218 22.5048L44.7787 1.24786C45.067 0.969383 45.075 0.51004 44.7965 0.221771C44.518 -0.0665017 44.0587 -0.0744859 43.7704 0.203991C43.7643 0.209797 43.7584 0.215782 43.7526 0.221771L22.4957 21.4787L1.23878 0.221767C0.950516 -0.0567093 0.491169 -0.048729 0.212692 0.239544C-0.0589751 0.52074 -0.0589752 0.966659 0.212692 1.24786L21.4696 22.5048Z" fill="black"/>
+                </svg>                    
+            </button>
+        </div>
+        <a href="#" class="header__menu-link">Главная</a>
+        <a href="#" class="header__menu-link header__menu-link_active">Ипотека</a>
+        <a href="#" class="header__menu-link">Отзывы</a>
+        <a href="#" class="header__menu-link">Специалисты</a>
+        <a href="#" class="header__menu-link">Объекты</a>
+    </div>
+</div>
+<div class="filter">
+    <div class="filter__wrapper">
+        <a href="#" class="filter__close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_59_3893)">
+                <path d="M9.54219 10.0023L0.0946675 19.4498C-0.0312366 19.5757 -0.0312366 19.7799 0.0946674 19.9058C0.22061 20.0317 0.424765 20.0317 0.550709 19.9058L9.99823 10.4583L19.4457 19.9058C19.5739 20.0295 19.778 20.026 19.9018 19.8979C20.0225 19.7729 20.0225 19.5748 19.9018 19.4498L10.4543 10.0023L19.9018 0.554737C20.0299 0.430971 20.0335 0.226818 19.9097 0.0986977C19.7859 -0.0294228 19.5818 -0.0329705 19.4537 0.0907955C19.4509 0.0933761 19.4483 0.0960369 19.4457 0.0986976L9.99823 9.54622L0.550711 0.098696C0.42259 -0.02507 0.218435 -0.0215243 0.0946692 0.106596C-0.0260736 0.231573 -0.0260737 0.42976 0.0946691 0.554735L9.54219 10.0023Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_59_3893">
+                <rect width="20" height="20" fill="white" transform="translate(20 20) rotate(-180)"/>
+                </clipPath>
+                </defs>
+            </svg>                
+        </a>
+        <div class="filter__title">Выберите нужные параметры</div>
+        <form action="#" class="banner__form">
+            <div class="filter__type">
+                <p class="filter__label">Тип</p>
+                <div class="filter__accordion">
+                    <a href="#" class="filter__accordion-link">
+                        <p>Коммерческая недвижимость</p>
+                        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.6183 0.618269C13.1317 0.131678 12.3429 0.131248 11.8558 0.617308L7 5.4625L2.14423 0.617309C1.65711 0.131248 0.868321 0.131678 0.38173 0.618269C-0.105236 1.10524 -0.105236 1.89476 0.38173 2.38173L5.58579 7.58579C6.36683 8.36683 7.63317 8.36683 8.41421 7.58579L13.6183 2.38173C14.1052 1.89476 14.1052 1.10524 13.6183 0.618269Z" fill="#DC4F00"/>
+                        </svg>                                    
+                    </a>
+                    <div class="filter__accordion-content">
+                        <a href="#" class="banner__accordion-option">Коммерческая недвижимость</a>
+                        <a href="#" class="banner__accordion-option">Частная недвижимость</a>
+                        <a href="#" class="banner__accordion-option">Аренда</a>
+                        <a href="#" class="banner__accordion-option">Продажа</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__purpose">
+                <p class="filter__label">Назначение</p>
+                <div class="filter__purpose-inputs">
+                    <input type="radio" name="rent" id="rent" checked value="Аренда">
+                    <label for="rent">
+                        Аренда
+                    </label>
+                    <input type="radio" name="rent" id="purchase" value="Покупка">
+                    <label for="purchase">
+                        Покупка
+                    </label>
+                </div>
+            </div>
+            <div class="filter__location">
+                <p class="filter__label">Район</p>
+                <div class="filter__accordion">
+                    <a href="#" class="filter__accordion-link filter__accordion-link_bottom">
+                        <p>Центральный р-н</p>
+                        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.6183 0.618269C13.1317 0.131678 12.3429 0.131248 11.8558 0.617308L7 5.4625L2.14423 0.617309C1.65711 0.131248 0.868321 0.131678 0.38173 0.618269C-0.105236 1.10524 -0.105236 1.89476 0.38173 2.38173L5.58579 7.58579C6.36683 8.36683 7.63317 8.36683 8.41421 7.58579L13.6183 2.38173C14.1052 1.89476 14.1052 1.10524 13.6183 0.618269Z" fill="#DC4F00"/>
+                        </svg>                                    
+                    </a>
+                    <div class="filter__accordion-content filter__accordion-content_bottom">
+                        <a href="#" class="banner__accordion-option">Центральный р-н</a>
+                        <a href="#" class="banner__accordion-option">Окраина</a>
+                        <a href="#" class="banner__accordion-option">Сев-Западный р-н</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__rooms">
+                <p class="filter__label">Комнаты</p>
+                <div class="filter__rooms-inputs">
+                    <input type="radio" name="rooms" id="room-1" checked value="1">
+                    <label for="room-1">
+                        1
+                    </label>
+                    <input type="radio" name="rooms" id="room-2" value="2">
+                    <label for="room-2">
+                        2
+                    </label>
+                    <input type="radio" name="rooms" id="room-3" value="3">
+                    <label for="room-3">
+                        3
+                    </label>
+                    <input type="radio" name="rooms" id="room-4" value="4">
+                    <label for="room-4">
+                        4
+                    </label>
+                    <input type="radio" name="rooms" id="room-5" value="5">
+                    <label for="room-5">
+                        5+
+                    </label>
+                </div>
+            </div>
+            <div class="filter__price">
+                <p class="filter__label">Цена</p>
+                <div class="filter__price-inputs">
+                    <div>
+                        <p>От</p>
+                        <input type="number" placeholder="15 000">
+                    </div>
+                    <div>
+                        <p>До</p>
+                        <input type="number" placeholder="300 000">
+                    </div>
+                </div>
+            </div>
+            <div class="filter__number">
+                <p class="filter__label">Номер объекта</p>
+                <input type="number" placeholder="205489874" name="number-object">
+            </div>
+            <button type="submit" class="filter__button">Найти</button>
+        </form>
+    </div>
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
