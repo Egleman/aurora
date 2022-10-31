@@ -169,6 +169,10 @@ a:hover {
   text-decoration: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -302,6 +306,11 @@ button {
   color: rgb(17, 17, 17);
 }
 
+.filter__accordion-link_shadows {
+  border-radius: 16px 16px 0px 0px;
+  box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.25);
+}
+
 .filter__accordion-content {
   padding-top: 15px;
   position: absolute;
@@ -312,6 +321,8 @@ button {
   background: #fff;
   padding-left: 20px;
   box-sizing: border-box;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 16px 16px;
 }
 
 .filter__accordion-content a {
@@ -320,10 +331,15 @@ button {
   font-size: 18px;
   line-height: 25px;
   color: rgb(17, 17, 17);
+  transition: 0.3s all;
 }
 
 .filter__accordion-content a:last-of-type {
   padding-bottom: 20px;
+}
+
+.filter__accordion-content a:hover {
+  color: #FFD238;
 }
 
 .filter__accordion-content_active {
@@ -449,7 +465,7 @@ button {
   font-size: 16px;
   line-height: 22px;
   text-align: right;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255);
 }
 
 .filter__price-inputs div input {
@@ -578,6 +594,7 @@ button {
   list-style-type: none;
   margin-bottom: 35px;
   margin-left: 20px;
+  flex-wrap: wrap;
 }
 
 .breadcrumb li:not(:last-of-type) {
@@ -702,6 +719,19 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: 0.3s all;
+}
+
+.header__social a svg {
+  transition: 0.3s all;
+}
+
+.header__social a svg path {
+  transition: 0.3s all;
+}
+
+.header__social a:hover svg path {
+  fill: #DC4F00;
 }
 
 .header__button {
@@ -720,6 +750,11 @@ button {
   color: #FFFFFF;
   padding: 0px 20px;
   height: 35px;
+  transition: 0.3s all;
+}
+
+.header__button:hover {
+  background: #C74700;
 }
 
 .header__burger {
@@ -910,16 +945,23 @@ button {
   color: rgb(17, 17, 17);
 }
 
+.banner__accordion-link_shadows {
+  border-radius: 16px 16px 0px 0px;
+  box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.25);
+}
+
 .banner__accordion-content {
-  padding-top: 15px;
+  padding-top: 10px;
   position: absolute;
   width: 100%;
-  top: 70%;
+  top: 85%;
   display: none;
   flex-direction: column;
   background: #fff;
   padding-left: 20px;
   box-sizing: border-box;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 16px 16px;
 }
 
 .banner__accordion-content a {
@@ -928,10 +970,15 @@ button {
   font-size: 18px;
   line-height: 25px;
   color: rgb(17, 17, 17);
+  transition: 0.3s all;
 }
 
 .banner__accordion-content a:last-of-type {
   padding-bottom: 20px;
+}
+
+.banner__accordion-content a:hover {
+  color: #FFD238;
 }
 
 .banner__accordion-content_active {
@@ -1057,7 +1104,7 @@ button {
   font-size: 16px;
   line-height: 22px;
   text-align: right;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255);
 }
 
 .banner__price-inputs div input {
@@ -1172,6 +1219,11 @@ button {
   line-height: 25px;
   color: #FFFFFF;
   margin: 0 auto;
+  transition: 0.3s all;
+}
+
+.banner__button:hover {
+  background: #C74700;
 }
 
 .no-webp .banner__bg {
@@ -1721,6 +1773,7 @@ button {
   width: 25px;
   height: 25px;
   flex-shrink: 0;
+  transition: 0.3s all;
 }
 
 .footer__social a svg {
@@ -1728,6 +1781,14 @@ button {
   height: 25px;
   display: flex;
   flex-shrink: 0;
+}
+
+.footer__social a svg path {
+  transition: 0.3s all;
+}
+
+.footer__social a:hover svg path {
+  fill: #FFD238;
 }
 
 .help {
@@ -1956,6 +2017,7 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 
 .team__card-img {
@@ -2172,6 +2234,11 @@ button {
   width: 170px;
   height: 47px;
   margin: 50px auto 0px;
+  transition: 0.3s all;
+}
+
+.reviews__button:hover {
+  background: #C74700;
 }
 
 .single {
@@ -2400,6 +2467,11 @@ button {
   max-width: 135px;
   width: 100%;
   margin-bottom: 40px;
+  transition: 0.3s all;
+}
+
+.single__link:hover {
+  background: #C74700;
 }
 
 .single__desc {
@@ -2608,6 +2680,11 @@ button {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+  transition: 0.3s all;
+}
+
+.rent__contact-btn:hover {
+  background: #C74700;
 }
 
 .rent__best {
@@ -4165,10 +4242,6 @@ button {
 }
 
 @media (max-width: 960px) {
-  .breadcrumb {
-    display: none;
-  }
-
   .single__title {
     display: none;
   }
@@ -4188,7 +4261,7 @@ button {
 
   .single__slide {
     max-width: 100%;
-    height: 265px;
+    height: 465px;
   }
 
   .single__pagination {
@@ -4203,6 +4276,7 @@ button {
     background: #E4E4E4;
     display: flex;
     border-radius: 100%;
+    cursor: pointer;
   }
 
   .single__pagination .swiper-pagination-bullet-active {
@@ -4582,6 +4656,10 @@ button {
     top: -25px;
   }
 
+  .breadcrumb {
+    margin-left: 0px;
+  }
+
   .header__wrapper {
     height: 50px;
   }
@@ -4618,8 +4696,8 @@ button {
   }
 
   .header__menu-link {
-    font-size: 35px;
-    line-height: 43px;
+    font-size: 25px;
+    line-height: 33px;
   }
 
   .banner__cards-title a {
@@ -4820,6 +4898,16 @@ button {
     row-gap: 50px;
   }
 
+  .team__card {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .team__card-img {
+    height: auto;
+  }
+
   .team__card_hidden\@s {
     display: none;
   }
@@ -4871,6 +4959,10 @@ button {
     margin-right: 0px;
   }
 
+  .single__slide {
+    height: 265px;
+  }
+
   .single__map {
     display: none;
   }
@@ -4896,14 +4988,22 @@ button {
   }
 
   .rent__grid {
-    grid-template-columns: 1fr;
-    -moz-column-gap: 0px;
-         column-gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 15px;
+         column-gap: 15px;
     row-gap: 30px;
   }
 
   .rent__card {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 435px) {
+  .rent__grid {
+    grid-template-columns: 1fr;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
   }
 }
 
@@ -4982,6 +5082,11 @@ button {
   .header__burger svg {
     width: 23px;
     height: 14px;
+  }
+
+  .header__menu-link {
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .banner__filter {
